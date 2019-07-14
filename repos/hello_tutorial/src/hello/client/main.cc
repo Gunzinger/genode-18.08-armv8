@@ -25,6 +25,8 @@ void Component::construct(Genode::Env &env)
 
 	int const sum = hello.add(2, 5);
 	Genode::log("added 2 + 5 = ", sum);
+	int* intpointer = nullptr;
+	Genode::log("intpointer size: ", sizeof(intpointer), "bytes");
 
 	Genode::log("hello test completed");
 }
